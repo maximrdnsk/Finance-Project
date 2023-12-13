@@ -1,0 +1,26 @@
+@import "../../assets/titles.scss";
+@import "../../assets/colors.scss";
+@import "../../assets/fonts.scss";
+@import "../../assets/buttons.scss";
+
+.income{
+  display: flex;
+  justify-content: space-around;
+  .income-container{
+    .income-title{
+      @include mainTitle;
+      @include Roboto400;
+      font-size: 28px;
+    }
+  }
+  .income-total{
+    width: 700px;
+    height: 100px;
+    background-color: $darkblue;
+  }
+  .incomes{
+    width: 700px;
+    height: 900px;
+    overflow: auto;
+  }
+}

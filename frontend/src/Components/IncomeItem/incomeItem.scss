@@ -1,0 +1,74 @@
+@import "../../assets/titles.scss";
+@import "../../assets/colors.scss";
+@import "../../assets/fonts.scss";
+@import "../../assets/buttons.scss";
+
+
+
+
+.content{
+    margin-top: 20px;
+    width: 700px;
+    height: 140px;
+    background-color: $color9;
+    border-radius: 8px;
+    border: 0;
+      .content__title{
+        display: flex;
+        align-items: center;
+        @include Roboto400;
+        font-size: 20px;
+        background-color: $color1;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .category-icon{
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .inner-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .inner-content-text{
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          p{
+            display: flex;
+            align-items: center;
+            @include Roboto200;
+            font-size: 18px;
+            .content__img{
+              width: 30px;
+              height: 30px;
+              margin-right: 5px;
+            }
+          }
+        }
+        .btn-content{
+          margin-top: 20px;
+          width: 40px;
+          height: 40px;
+          border-radius: 8px;
+          background-color: $darkblue;
+          display: flex;
+          justify-content:center;
+          align-items: center;
+          gap: 10px;
+          border: 0;
+          @include Roboto300;
+          font-weight: 400;
+          font-size: 16px;
+          .content__img{
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .btn-content:hover{
+          @include ButtonAroundHover;
+        }
+      }
+    }
+
+

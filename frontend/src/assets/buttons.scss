@@ -1,0 +1,44 @@
+@import "./colors.scss";
+@import "./fonts.scss";
+
+@mixin ButtonAdd {
+  width: 120px;
+  height: 36px;
+  border-radius: 5px;
+  border: 0;
+}
+
+@mixin ButtonAddOne{
+  box-shadow: 0 5px 15px 0 $lightgreen;
+
+  transition: 0.5s;
+}
+
+@mixin ButtonAddOneHover{
+  transform: translate(0,-1.5px);
+
+  box-shadow: 0 10px 20px 0 $lightgreen;
+}
+
+@mixin ButtonAddTwo{
+  box-shadow: 0 5px 15px 0 $darkblue;
+  transition: 0.5s;
+}
+
+@mixin ButtonAddTwoHover{
+  transform: translate(0,-1.5px);
+  box-shadow: 0 20px 30px 0 $darkblue;
+}
+
+@mixin ButtonAround{
+  width: 100px;
+  height: 28px;
+  border-radius: 10px;
+  color: white;
+  transition: .2s linear;
+  border: 0px;
+}
+
+@mixin ButtonAroundHover{
+  box-shadow: 0 0 0 2px white, 0 0 0 4px $darkblue
+}

@@ -1,0 +1,12 @@
+@import "../../assets/titles.scss";
+@import "../../assets/colors.scss";
+@import "../../assets/fonts.scss";
+@import "../../assets/buttons.scss";
+
+.expenses{
+  .expenses-title{
+    @include mainTitle;
+    @include Roboto400;
+    font-size: 28px;
+  }
+}

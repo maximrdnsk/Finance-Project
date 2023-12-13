@@ -1,0 +1,65 @@
+@import "../../assets/titles.scss";
+@import "../../assets/colors.scss";
+@import "../../assets/fonts.scss";
+@import "../../assets/buttons.scss";
+
+.dashboard{
+  .dashboard__title{
+    @include mainTitle;
+    @include Roboto400;
+    font-size: 28px;
+  }
+  .dashboard-info-income{
+    width: 200px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: $darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dashboard-info__total-income{
+      @include Roboto300;
+      font-size: 20px;
+      .dashboard-info__icon{
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .dashboard-info-expenses{
+    margin-top: 10px;
+    width: 200px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: $darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dashboard-info__total-expenses{
+      @include Roboto300;
+      font-size: 20px;
+      .dashboard-info__icon{
+        width: 40px;
+        height: 40px;
+      }
+   }
+ }
+ .dashboard-info-balance{
+  margin-top: 10px;
+  width: 200px;
+  height: 100px;
+  border-radius: 12px;
+  background-color: $darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .dashboard-info__total-balance{
+    @include Roboto300;
+    font-size: 20px;
+    .dashboard-info__icon{
+      width: 40px;
+      height: 40px;
+    }
+ }
+}
+}
