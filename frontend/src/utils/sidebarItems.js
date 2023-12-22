@@ -1,31 +1,29 @@
-import {iconWallet, iconDashboard, iconBudget, iconGoals, iconAnalytics, iconSettings} from "./icons"
-
-
+import {IconWallet, IconDashboard, IconBudget, IconGoals, IconAnalytics, IconSettings} from "./icons"
 
 const sidebarItems = [
     {id: 1,
     title: "Dashboard",
-    icon: iconDashboard,
+    icon: <IconDashboard/>,
     link: "/dashboard"},
     {id: 2,
     title: "Expenses",
-    icon: iconWallet,
+    icon: <IconWallet/>,
     link: "/expenses"},
     {id: 3,
     title: "Income",
-    icon: iconBudget,
+    icon: <IconBudget/>,
     link: "/income"},
     {id: 4,
     title: "Goals",
-    icon: iconGoals,
+    icon: <IconGoals/>,
     link: "/goals"},
     {id: 5,
     title: "Analytics",
-    icon: iconAnalytics,
+    icon: <IconAnalytics/>,
     link: "/analytics"},
     {id: 6,
     title: "Settings",
-    icon: iconSettings,
+    icon: <IconSettings/>,
     link: "/settings"},
 ]
 

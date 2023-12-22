@@ -12,14 +12,11 @@ function Income() {
   }, [])
   return (
     <div className="income">
-
+      <div className="income__title">Income</div>
       <div className="income-container">
-        <div className="income-title">Income</div>
         <Form/>
-      </div>
-      <div className='income-title'>
-        <div className='income-total'>Total Income:<span>${totalIncome()}</span></div>
-          <div className="incomes">
+        <div className="incomes">
+          <div className='income-total'>Total Income:<span>${totalIncome()}</span></div>
             {incomes.map((income)=> {
               const {_id, title, amount, date, category, description, type} = income;
               return <IncomeItem
@@ -36,7 +33,7 @@ function Income() {
             })}
         </div>
       </div>
-    </div>
+      </div>
   )
 }
 

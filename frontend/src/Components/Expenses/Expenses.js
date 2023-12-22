@@ -12,14 +12,11 @@ function Expenses() {
   }, [])
   return (
     <div className="income">
-
+      <div className="income__title">Expenses</div>
       <div className="income-container">
-        <div className="income-title">Expenses</div>
         <ExpenseForm/>
-      </div>
-      <div className='income-title'>
-        <div className='income-total'>Total Expenses:<span>${totalExpenses()}</span></div>
-          <div className="incomes">
+        <div className="incomes">
+          <div className='income-total'>Total Expenses:<span>${totalExpenses()}</span></div>
             {expenses.map((income)=> {
               const {_id, title, amount, date, category, description, type} = income;
               return <IncomeItem
@@ -36,7 +33,7 @@ function Expenses() {
             })}
         </div>
       </div>
-    </div>
+      </div>
   )
 }
 

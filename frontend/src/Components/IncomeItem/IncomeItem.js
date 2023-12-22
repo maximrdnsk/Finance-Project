@@ -1,6 +1,6 @@
 import React from 'react'
 import { dateFormat } from '../../utils/dateFormat';
-import { iconComment,iconDollar, iconCalendar, iconTrash, iconBitcoin, iconBank, iconFreelance, iconCoin, iconTransfer, iconStudy, iconGift, iconGit, iconSteam, iconShop, iconPhone, iconWifi} from '../../utils/icons';
+import { IconComment,IconDollar, IconCalendar, IconTrash, IconBitcoin, IconBank, IconFreelance, IconCoin, IconTransfer, IconStudy, IconGift, IconGit, IconSteam, IconShop, IconPhone, IconWifi} from '../../utils/icons';
 import "./incomeItem.scss"
 
 
@@ -19,38 +19,38 @@ function IncomeItem({
   const categoryIcon = () =>{
     switch(category) {
       case 'salary':
-        return <img className='category-icon' src={iconCoin} alt='icon'/>
+        return <div className='category-icon'><IconCoin/></div>
       case 'freelancing':
-        return <img className='category-icon' src={iconFreelance} alt='icon'/>
+        return <div className='category-icon'><IconFreelance/></div>
       case 'investment':
-        return <img className='category-icon' src={iconBank} alt='icon'/>
+        return <div className='category-icon'><IconBank/></div>
       case 'stocks':
-        return <img className='category-icon' src={iconTransfer} alt='icon'/>
+        return <div className='category-icon'><IconTransfer/></div>
       case 'bitcoin':
-        return <img className='category-icon' src={iconBitcoin} alt='icon'/>
+        return <div className='category-icon'><IconBitcoin/></div>
       case 'bank':
-        return <img className='category-icon' src={iconBank} alt='icon'/>
+        return <div className='category-icon'><IconBank/></div>
       case 'other':
-        return <img className='category-icon' src={iconCoin} alt='icon'/>
+        return <div className='category-icon'><IconCoin/></div>
     }
   }
 
   const expenseCategoryIcon = () =>{
     switch(category){
       case 'shop':
-        return <img className='category-icon' src={iconShop} alt='icon'/>
+        return <div className='category-icon'><IconShop/></div>
       case 'education':
-        return <img className='category-icon' src={iconStudy} alt='icon'/>
+        return <div className='category-icon'><IconStudy/></div>
       case 'gift':
-        return <img className='category-icon' src={iconGift} alt='icon'/>
+        return <div className='category-icon'><IconGift/></div>
       case 'code':
-        return <img className='category-icon' src={iconGit} alt='icon'/>
+        return <div className='category-icon'><IconGit/></div>
       case 'phone':
-        return <img className='category-icon' src={iconPhone} alt='icon'/>
+        return <div className='category-icon'><IconPhone/></div>
       case 'wifi':
-        return <img className='category-icon' src={iconWifi} alt='icon'/>
+        return <div className='category-icon'><IconWifi/></div>
       case 'steam':
-        return <img className='category-icon' src={iconSteam} alt='icon'/>
+        return <div className='category-icon'><IconSteam/></div>
     }
   }
 
@@ -58,14 +58,14 @@ function IncomeItem({
   return (
     <>
       <div className='content'>
-          <div className='content__title'>{type === 'expense' ? expenseCategoryIcon() : categoryIcon()}{title}</div>
           <div className='inner-content'>
             <div className='inner-content-text'>
-              <p><img className='content__img' src={iconDollar} alt='icon'/>{amount}</p>
-              <p><img className='content__img' src={iconCalendar} alt='icon'/> {dateFormat(date)}</p>
-              <p><img className='content__img' src={iconComment} alt='icon'/>{description}</p>
+              <p><div className='content__img'><IconCalendar/></div> {dateFormat(date)}</p>
+              <div className='content__title'>{type === 'expense' ? expenseCategoryIcon() : categoryIcon()}{title}</div>
+              <p><div className='content__img'><IconDollar/></div>{amount}</p>
+              <p><div className='content__img' ><IconComment/></div>{description}</p>
             </div>
-            <button className='btn-content' onClick={() => deleteItem(id)}><img className='content__img' src={iconTrash} alt='icon'/></button>
+            <button className='btn-content' onClick={() => deleteItem(id)}><IconTrash/></button>
           </div>
       </div>
     </>

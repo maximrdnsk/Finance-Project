@@ -4,23 +4,41 @@
 @import "../../assets/buttons.scss";
 
 .income{
-  display: flex;
-  justify-content: space-around;
-  .income-container{
-    .income-title{
-      @include mainTitle;
-      @include Roboto400;
-      font-size: 28px;
-    }
-  }
-  .income-total{
-    width: 700px;
+  .income-title{
+    width: 100%;
     height: 100px;
-    background-color: $darkblue;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    @include mainTitle;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px $color3;
+  }
+  .income-container{
+    width: 100%;
+    display: flex;
   }
   .incomes{
-    width: 700px;
+    margin-left: 50px;
+    width: 950px;
     height: 900px;
+    background-color: $white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: auto;
+    .income-total{
+      width: 800px;
+      height: 50px;
+      padding-left: 100px;
+      display: flex;
+      align-items: center;
+      @include Roboto400;
+      font-size: 18px;
+    }
   }
 }

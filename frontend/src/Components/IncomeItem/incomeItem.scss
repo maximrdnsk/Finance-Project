@@ -10,20 +10,20 @@
     margin-top: 20px;
     width: 700px;
     height: 140px;
-    background-color: $color9;
-    border-radius: 8px;
-    border: 0;
+    // background-color: $color9;
+    border-top: 1px solid $color6;
+    border-bottom: 1px solid $color6;
       .content__title{
         display: flex;
         align-items: center;
         @include Roboto400;
         font-size: 20px;
-        background-color: $color1;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        // background-color: $color1;
         .category-icon{
-          width: 40px;
-          height: 40px;
+          svg{
+            width: 40px;
+            height: 40px;
+          }
         }
       }
       .inner-content{
@@ -40,9 +40,11 @@
             @include Roboto200;
             font-size: 18px;
             .content__img{
-              width: 30px;
-              height: 30px;
-              margin-right: 5px;
+              svg{
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+              }
             }
           }
         }
@@ -61,8 +63,10 @@
           font-weight: 400;
           font-size: 16px;
           .content__img{
-            width: 20px;
-            height: 20px;
+            svg{
+              width: 40px;
+              height: 40px;
+            }
           }
         }
         .btn-content:hover{

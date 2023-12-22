@@ -14,6 +14,7 @@ import "./chart.scss"
 import {Line} from 'react-chartjs-2'
 import { useGlobalContext } from '../../context/globalContext'
 import { dateFormat } from '../../utils/dateFormat'
+import "../../assets/colors.scss"
 
 ChartJs.register(
     CategoryScale,
@@ -29,6 +30,7 @@ ChartJs.register(
 export function Chart() {
     const {incomes, expenses} = useGlobalContext()
     const data = {
+        
         labels: incomes.map((inc) =>{
             const {date} = inc
             return dateFormat(date)
@@ -42,7 +44,7 @@ export function Chart() {
                         return amount
                     })
                 ],
-                backgroundColor: 'blue',
+                backgroundColor: "#3686FF",
                 tension: .3
             },
             {
@@ -53,7 +55,7 @@ export function Chart() {
                         return amount
                     })
                 ],
-                backgroundColor: `orange`,
+                backgroundColor: "#FBA801",
                 tension: .3
             }
         ]

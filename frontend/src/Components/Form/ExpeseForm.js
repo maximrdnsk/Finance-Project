@@ -35,6 +35,7 @@ function ExpenseForm() {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
+      <div className="form__title">New Expense</div>
       <div className="input-control">
       <input
       type="text"
