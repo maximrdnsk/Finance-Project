@@ -36,6 +36,7 @@ function Form() {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
+      <div className="form__title">New Income</div>
       <div className="input-control">
       <input
       type="text"
@@ -64,8 +65,8 @@ function Form() {
         />
       </div>
       <div>
-        <select className="input-control-category" required value={category} name="category" id="category" onChange={handleInput("category")}>
-          <option value="" disabled>Select option</option>
+        <select required value={category} name="category" id="category" onChange={handleInput("category")}>
+          <option value="" disabled>Select option ⇩</option>
           <option value="salary">Salary</option>
           <option value="freelancing">Freelancing</option>
           <option value="investment">Investment</option>

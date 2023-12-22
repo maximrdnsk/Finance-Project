@@ -1,6 +1,8 @@
 @import "./colors.scss";
 @import "./fonts.scss";
 
+
 @mixin mainTitle {
-  
+  @include Roboto600;
+  font-size: 32px;
 }

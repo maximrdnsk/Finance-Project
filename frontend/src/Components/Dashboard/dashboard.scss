@@ -4,62 +4,111 @@
 @import "../../assets/buttons.scss";
 
 .dashboard{
+  height: 100%;
   .dashboard__title{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
     @include mainTitle;
-    @include Roboto400;
-    font-size: 28px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px $color3;
   }
-  .dashboard-info-income{
-    width: 200px;
-    height: 100px;
-    border-radius: 12px;
-    background-color: $darkblue;
+  .dashboard__greeting{
+    @include Roboto500;
+    font-size: 24px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+  }
+  .dashboard-container{
+    width: 1500px;
+    height: 100%;
+    flex-direction: row;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    .dashboard-info__total-income{
-      @include Roboto300;
-      font-size: 20px;
-      .dashboard-info__icon{
-        width: 40px;
-        height: 40px;
+    justify-content: space-between;
+    .dashboard-info-analytics{
+      width: 1000px;
+      flex-direction: column;
+      display: flex;
+      .dashboard-info{
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        .dashboard-info-income{
+          width: 300px;
+          height: 130px;
+          border-radius: 12px;
+          background-color: $white;
+          box-shadow: 8px 8px 8px $color3;
+          .dashboard-info__total-income{
+            @include Roboto400;
+            font-size: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+            .dashboard-info__icon{
+              @include Roboto500;
+              font-size: 38px;
+              margin-top: 10px;
+              svg{
+                margin-left: 10px;
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+        .dashboard-info-expenses{
+          width: 300px;
+          height: 130px;
+          border-radius: 12px;
+          background-color: $white;
+          box-shadow: 8px 8px 8px $color3;
+          .dashboard-info__total-expenses{
+            @include Roboto400;
+            font-size: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+            .dashboard-info__icon{
+              @include Roboto500;
+              font-size: 38px;
+              margin-top: 10px;
+              svg{
+                margin-left: 10px;
+                width: 30px;
+                height: 30px;
+              }
+            }
+         }
+       }
+        .dashboard-info-balance{
+          width: 300px;
+          height: 130px;
+          border-radius: 12px;
+          background-color: $white;
+          box-shadow: 8px 8px 8px $color3;
+            .dashboard-info__total-balance{
+              @include Roboto400;
+              font-size: 20px;
+              padding-top: 20px;
+              padding-left: 20px;
+            .dashboard-info__icon{
+              @include Roboto500;
+              font-size: 38px;
+              margin-top: 10px;
+              svg{
+                margin-left: 10px;
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
       }
     }
   }
-  .dashboard-info-expenses{
-    margin-top: 10px;
-    width: 200px;
-    height: 100px;
-    border-radius: 12px;
-    background-color: $darkblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .dashboard-info__total-expenses{
-      @include Roboto300;
-      font-size: 20px;
-      .dashboard-info__icon{
-        width: 40px;
-        height: 40px;
-      }
-   }
- }
- .dashboard-info-balance{
-  margin-top: 10px;
-  width: 200px;
-  height: 100px;
-  border-radius: 12px;
-  background-color: $darkblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .dashboard-info__total-balance{
-    @include Roboto300;
-    font-size: 20px;
-    .dashboard-info__icon{
-      width: 40px;
-      height: 40px;
-    }
- }
-}
+
 }

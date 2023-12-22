@@ -4,30 +4,53 @@
 @import "../../assets/buttons.scss";
 
 .form{
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+  .form__title{
+    width: 400px;
+    @include Roboto500;
+    font-size: 18px;
+  }
   .input-control{
+
+    width: 400px;
     input{
       margin-top: 20px;
-      width: 300px;
+      width: 400px;
       height: 40px;
       border: 0;
       border-radius: 8px;
-      background-color: $color9;
+      background-color: $white;
+      border: 1px solid $color3;
     }
     textarea{
       margin-top: 20px;
-      width: 300px;
+      width: 400px;
       height: 100px;
       border-radius: 8px;
-      background-color: $color9;
-      border: 0;
+      background-color: $white;
+      border: 1px solid $color3;
     }
   }
-  .input-control-category{
+  select {
     margin-top: 20px;
-    width: 150px;
-    height: 30px;
-    border: 0;
-    background-color: $darkblue;
+    width: 140px;
+    height: 40px;
+    border-radius: 8px;
+    background: $darkblue;
+    -webkit-appearance: none;
+    gap: 10px;
+    border: none;
+    @include Roboto400;
+    font-size: 15px;
+    display: flex;
+    text-align: center;
   }
   .submit-btn{
     margin-top: 20px;

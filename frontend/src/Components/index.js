@@ -1,4 +1,4 @@
-export * from "./Navigation/Navigation"
+export * from "./Sidebar/Sidebar"
 export * from "./Analytics/Analytics"
 export * from "./Dashboard/Dashboard"
 export * from "./Expenses/Expenses"

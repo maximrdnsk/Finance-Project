@@ -3,7 +3,9 @@ import "./settings.scss"
 
 function Settings() {
   return (
-    <div>Settings</div>
+    <div className='settings'>
+      <div className='settings__title'>Settings</div>
+    </div>
   )
 }
 

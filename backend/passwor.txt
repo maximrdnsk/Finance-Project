@@ -1,2 +1,5 @@
+//PORT = 5000
+//MONGO_URL = mongodb+srv://user1:oFQns4WSSUV3ZkVI@mxrdnsk.cfckfzd.mongodb.net/?retryWrites=true&w=majority
+
 //user1
 //oFQns4WSSUV3ZkVI
